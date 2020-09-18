@@ -1,0 +1,43 @@
+<!-- NEW VS OBJECT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New VS Object</title>
+</head>
+<body>
+    <script>
+        var BF = {
+            titulo: "Battlefield",
+            genero: 'FPS',
+            jugar: function(){
+                console.log('Estoy jugando a ' + this.titulo);
+            }
+        };
+
+        var BF1 = Object.create(BF);
+        BF1['versión']= 'Battlefield 1';
+        console.log(BF.isPrototypeOf(BF1));
+        console.log(Object.prototype.isPrototypeOf(BF));
+
+        //Crear objetos con New
+        function COD(){
+            this.titulo = 'Call of Duty';
+            this.genero = 'FPS';
+            this.jugar = function(){
+                console.log('Estoy jugando a ' + this.titulo);
+            };
+        }
+
+        var IW = new COD();
+        IW['versión']= 'Infinite Warfare';
+        console.log(IW);
+
+        //Diferencia entre crear con New u Object.create: prototipo del objeto.
+        //El new no aprovecha al máximo la herencia.
+    </script>
+
+<input type="button" onclick="history.back()" name="volver atrás" value="Volver atrás">
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- PROMPT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    
+    <script>
+        var usuario = prompt('Introduce tu nombre de usuario: ');
+
+        if(usuario && usuario.trim()){
+            var confimar = confirm('¿Es ' + usuario + ' correcto?');
+            
+            if (confimar){
+                alert('Usuario correcto');
+            }else{
+                alert('Usuario incorrecto');
+            }
+        }else{
+            alert('No has introducido un usuario');
+        }
+    </script>
+
+<input type="button" onclick="history.back()" name="volver atrás" value="Volver atrás">
+
+</body>
+</html> 

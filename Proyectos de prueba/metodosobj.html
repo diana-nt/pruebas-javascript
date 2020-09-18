@@ -1,0 +1,32 @@
+<!-- MÉTODOS DE OBJETOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+</head>
+<body>
+    <script>
+        var persona = {
+            nombre: 'Diana',
+            edad: '18',
+            ocupacion: 'estudiante',
+            color: 'verde',
+            ciudad: 'Zaragoza',
+            caminar: function(){
+                console.log('Estoy caminando')
+            },
+            saludar: function(){
+                console.log('Hola buenas tardes, me llamo '+ this.nombre)
+            }
+        };
+
+        persona.saludar();
+    </script>
+
+<input type="button" onclick="history.back()" name="volver atrás" value="Volver atrás">
+
+</body>
+</html> 

@@ -1,0 +1,28 @@
+<!-- MATRICES MULTIDIMENSIONALES -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices multidimensionales</title>
+</head>
+<body>
+    <script>
+        var elementos = ["Carbono", "Oxígeno", "Hierro"];
+        var simbolo = ["C", "O", "Fe"];
+        var num_atomico=["6", "8", "26"];
+        var tabla_per=[elementos, simbolo, num_atomico];
+        //console.log("El símbolo del ", elementos[2], " es: ", tabla_per[1][2]);
+        //console.log(tabla_per);
+        //console.log("=".repeat(40));
+
+        for(let elemento in elementos){
+            console.log(elementos[elemento], simbolo[elemento], num_atomico[elemento]);
+        }
+    </script>
+
+<input type="button" onclick="history.back()" name="volver atrás" value="Volver atrás">
+
+</body>
+</html> 

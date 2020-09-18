@@ -1,0 +1,29 @@
+<!-- HOISTING -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    <script>
+
+        //El código siguiente está escrito de la manera que sería esperada que funcione.
+        function nombreDelGato(nombre){
+            console.log("El nombre de mi gato es "+nombre);
+        }
+        nombreDelGato("Mauricio");
+
+        //No obstante, seguiría funcionando si llamasemos a la función antes de escribirla.
+        nombreDelGato("Dumas");
+        function nombreDelGato(nombre){
+            console.log("El nombre de mi gato es "+nombre);
+        }
+        </script>
+
+        <input type="button" onclick="history.back()" name="volver atrás" value="Volver atrás">
+        
+</body>
+</html> 

@@ -1,0 +1,38 @@
+<!-- OBJETOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        var opinion = "Es uno de mis libros favoritos";
+        var libro = {
+            titulo: "IT",
+            autor: "Stephen King",
+            genero: "terror", 
+            valoracion: 9,
+            tags: ["Pennywise", "floating", "payaso", "Derry"],
+            opinion: opinion,
+            "critica general": "Positiva de forma unánime."
+            //Para acceder a propiedades que no siguen las reglas de variables, la única forma de acceder
+            //es con una bracket notation.
+        };
+        //console.log(libro["critica general"]);
+
+        //La bracket notation también es útil para recorrer todas las propiedades de un objeto.
+        //Para ello se suele usar el bucle for...in.
+
+        for (var propiedad in libro){
+            console.log(propiedad + ': ' + libro[propiedad]);
+        }
+
+    </script>
+
+<input type="button" onclick="history.back()" name="volver atrás" value="Volver atrás">
+    
+</body>
+</html> 
